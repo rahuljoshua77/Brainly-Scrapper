@@ -79,7 +79,7 @@ def open_browser(inputs,pages):
                     try:
                         for ans in answer:
                             try:
-                                browser.execute_script("arguments[0].scrollIntoView();", i)
+                                browser.execute_script("arguments[0].scrollIntoView();", ans)
                                 collect_answer.append(ans.text.strip())
                             except:
                                 pass
