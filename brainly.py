@@ -188,12 +188,12 @@ def open_browser(inputs,pages):
                             f.write(f'{string_img}')
                     if len(collect_image) > 0: 
                         with open('data_txt.txt','a',encoding='utf-8') as f:
-                            f.write(f'{code_question}.txt|{code_answer}.txt|{code_img}.txt')
+                            f.write(f'{code_question}.txt|{code_answer}.txt|{code_img}.txt\n')
                         with open('data_url.txt','a',encoding='utf-8') as f:
                             f.write(f'https://www.klgrth.io/paste/{code_question}/raw|https://www.klgrth.io/paste/{code_answer}/raw|https://www.klgrth.io/paste/{code_img}/raw\n')
                     else:
                         with open('data_txt.txt','a',encoding='utf-8') as f:
-                            f.write(f'{code_question}.txt|{code_answer}.txt')
+                            f.write(f'{code_question}.txt|{code_answer}.txt\n')
                         with open('data_url.txt','a',encoding='utf-8') as f:
                             f.write(f'https://www.klgrth.io/paste/{code_question}/raw|https://www.klgrth.io/paste/{code_answer}/raw\n')
                     
