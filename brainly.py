@@ -190,12 +190,12 @@ def open_browser(inputs,pages):
                         with open('data_txt.txt','a',encoding='utf-8') as f:
                             f.write(f'{code_question}.txt|{code_answer}.txt|{code_img}.txt')
                         with open('data_url.txt','a',encoding='utf-8') as f:
-                            f.write(f'https://www.klgrth.io/paste/{code_question}/raw|https://www.klgrth.io/paste/{code_answer}/raw|https://www.klgrth.io/paste/{code_img}/raw')
+                            f.write(f'https://www.klgrth.io/paste/{code_question}/raw|https://www.klgrth.io/paste/{code_answer}/raw|https://www.klgrth.io/paste/{code_img}/raw\n')
                     else:
                         with open('data_txt.txt','a',encoding='utf-8') as f:
                             f.write(f'{code_question}.txt|{code_answer}.txt')
                         with open('data_url.txt','a',encoding='utf-8') as f:
-                            f.write(f'https://www.klgrth.io/paste/{code_question}/raw|https://www.klgrth.io/paste/{code_answer}/raw')
+                            f.write(f'https://www.klgrth.io/paste/{code_question}/raw|https://www.klgrth.io/paste/{code_answer}/raw\n')
                     
                            
                     print(f'{date()} {m+1} Question scrapped successfully')
